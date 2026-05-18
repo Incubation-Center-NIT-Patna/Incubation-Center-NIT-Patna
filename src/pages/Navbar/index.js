@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
+import { tinkering_lab, nitp_main } from '../../constants/const';
 import "./style.css";
 import { Link } from "react-router-dom";
 
@@ -37,10 +38,7 @@ const Navbar = () => {
       style={headerStyle}
     >
       <header className="header" style={navbarStyle}>
-        <a href="https://www.nitp.ac.in/" className="logo1">
-          <img src="/img/download-removebg-preview.png" alt="NITP logo" />
-        </a>
-
+        <a href={nitp_main} className="logo1" style={logoStyle}><img src="  img/download-removebg-preview.png " alt="NITP_logo" /></a>
         <nav className="navbar">
           <div className="link">
             <Link to="/#home">Home</Link>
@@ -72,7 +70,8 @@ const Navbar = () => {
               <Link to="/student">Students</Link>
               <Link to="/admin">Admin</Link>
             </div>
-          </div>
+          </div> 
+          <a href={tinkering_lab} className='link' download="Tinkering Lab">Tinkering lab</a>
 
           <a
             href="https://tinkering-lab.onrender.com/"

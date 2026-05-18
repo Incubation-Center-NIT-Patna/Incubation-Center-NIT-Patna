@@ -1,4 +1,5 @@
 import React from 'react'
+import { campus_image } from '../../constants/const';
 import "./style.css";
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
 <div className="aboutdiv">
   <div className="building-img" data-aos="zoom-in">
     <img
-      src="https://images.collegedunia.com/public/college_data/images/campusimage/1611227237IMG_20201103_111253.jpg"
+      src={campus_image}
       alt="Incubation center NIT Patna"/>
   </div>
 
