@@ -140,3 +140,9 @@
     max-height: 235px;
   }
 }
+
+
+.notice-container {
+  width: 100%;
+  max-width: 400px;
+}
